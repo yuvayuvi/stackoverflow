@@ -8,6 +8,8 @@ services:
       - "8080:8080"
     depends_on:
       - dbpostgresql
+    links:
+      - dbpostgresql
   dbpostgresql:
     image: postgres
     ports:
