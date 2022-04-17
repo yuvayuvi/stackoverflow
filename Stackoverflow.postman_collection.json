@@ -1,0 +1,514 @@
+{
+	"info": {
+		"_postman_id": "a8352b98-e0e6-4228-86bd-681ddb92f4e7",
+		"name": "Stackoverflow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Signup user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\" : \"Yuvaraj\",\n    \"lastName\" : \"Subramani\",\n    \"email\" : \"yuvamca2793@gmail.com\",\n    \"password\" : \"secret\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update user",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\" : \"Yuvaraj\",\n    \"lastName\" : \"S\",\n    \"email\" : \"yuvamca2793@gmail.com\",\n    \"password\" : \"secret\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/update-user/57068238-ed88-4b1b-a55c-c33d1c4ed7b0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"update-user",
+								"57068238-ed88-4b1b-a55c-c33d1c4ed7b0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get user",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstName\" : \"Yuvaraj\",\n    \"lastName\" : \"Subramani\",\n    \"email\" : \"yuvamca2794@gmail.com\",\n    \"password\" : \"secret\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/user/57068238-ed88-4b1b-a55c-c33d1c4ed7b0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"user",
+								"57068238-ed88-4b1b-a55c-c33d1c4ed7b0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\" : \"yuvamca2795@gmail.com\",\n    \"password\" : \"secret\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Question",
+			"item": [
+				{
+					"name": "Create question",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Test-2\",\n    \"body\" : \"Test question-2\",\n    \"createdBy\" : \"Yuvaraj S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/question/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"question",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update question",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Updated Title\",\n    \"body\" : \"Updated question body\",\n    \"createdBy\" : \"Hari S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/question/update/27d47f44-5c9c-4fc8-a602-b72a58ad7e75",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"question",
+								"update",
+								"27d47f44-5c9c-4fc8-a602-b72a58ad7e75"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upvote question",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Updated Title\",\n    \"body\" : \"Updated question body\",\n    \"createdBy\" : \"Hari S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/question/upvote/27d47f44-5c9c-4fc8-a602-b72a58ad7e75",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"question",
+								"upvote",
+								"27d47f44-5c9c-4fc8-a602-b72a58ad7e75"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Downvote question",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Updated Title\",\n    \"body\" : \"Updated question body\",\n    \"createdBy\" : \"Hari S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/question/downvote/27d47f44-5c9c-4fc8-a602-b72a58ad7e75",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"question",
+								"downvote",
+								"27d47f44-5c9c-4fc8-a602-b72a58ad7e75"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get question",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Updated Title\",\n    \"body\" : \"Updated question body\",\n    \"createdBy\" : \"Hari S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/question/get/27d47f44-5c9c-4fc8-a602-b72a58ad7e75",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"question",
+								"get",
+								"27d47f44-5c9c-4fc8-a602-b72a58ad7e75"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get all with pagination",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Updated Title\",\n    \"body\" : \"Updated question body\",\n    \"createdBy\" : \"Hari S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/question/get-all?page=0&limit=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"question",
+								"get-all"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "limit",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Answer",
+			"item": [
+				{
+					"name": "Create answer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"questionId\" : \"27d47f44-5c9c-4fc8-a602-b72a58ad7e75\",\n    \"answer\" : \"Test answer-1\",\n    \"createdBy\" : \"Chan R\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/answer/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"answer",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update answer",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"questionId\" : \"27d47f44-5c9c-4fc8-a602-b72a58ad7e75\",\n    \"answer\" : \"Test updated answer\",\n    \"createdBy\" : \"Gullu S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/answer/update/f8d3b572-3faf-49a7-9e64-d07d856f2c61",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"answer",
+								"update",
+								"f8d3b572-3faf-49a7-9e64-d07d856f2c61"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Upvote answer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Updated Title\",\n    \"body\" : \"Updated question body\",\n    \"createdBy\" : \"Hari S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/answer/upvote/f8d3b572-3faf-49a7-9e64-d07d856f2c61",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"answer",
+								"upvote",
+								"f8d3b572-3faf-49a7-9e64-d07d856f2c61"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Downvote answer",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Updated Title\",\n    \"body\" : \"Updated question body\",\n    \"createdBy\" : \"Hari S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/answer/downvote/678ea3b7-2300-43fc-8502-801b6c95bd06",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"answer",
+								"downvote",
+								"678ea3b7-2300-43fc-8502-801b6c95bd06"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get answers by question Id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\" : \"Updated Title\",\n    \"body\" : \"Updated question body\",\n    \"createdBy\" : \"Hari S\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/stackoverflow/answer/get-by-question/27d47f44-5c9c-4fc8-a602-b72a58ad7e75",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"stackoverflow",
+								"answer",
+								"get-by-question",
+								"27d47f44-5c9c-4fc8-a602-b72a58ad7e75"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
