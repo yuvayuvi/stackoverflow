@@ -1,5 +1,5 @@
-FROM openjdk:11
+FROM amazoncorretto:11
 VOLUME /tmp
 EXPOSE 8080
-ADD build/libs/stackoverflow-0.0.1-SNAPSHOT.jar stackoverflow.jar
+ADD target/stackoverflow-0.0.1-SNAPSHOT.jar stackoverflow.jar
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/stackoverflow.jar"]
